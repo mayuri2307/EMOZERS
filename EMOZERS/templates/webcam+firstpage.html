@@ -1,0 +1,174 @@
+<html lang="en">
+<body style="background-color:#1abc9c;color:#ffffff">
+<head>
+  <!doctype html>
+<html>
+<meta charset="utf-8"/>
+<head>
+<style>
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+
+  <title>EMOZERS</title>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='first_css.css') }}">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='first_css.css')}}">
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Logo</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#band">BAND</a></li>
+        <li><a href="#tour">TOUR</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">MORE
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<br>
+<br>
+
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+     <center><img src="C:\Users\Siddharth\PycharmProjects\FrontEnd_Emozers\templates\Slide_1.jpg"width="700" height="400 background-color=black" align="middle"/></center>
+      <div class="carousel-caption">
+
+
+      </div>
+    </div>
+    <div class="item">
+     <center><img src="C:\Users\Siddharth\PycharmProjects\FrontEnd_Emozers\templates\Slide_2.jpg"width="700" height="400" align="middle"/></center>
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+
+    <div class="item">
+      <center><img src="C:\Users\Siddharth\PycharmProjects\FrontEnd_Emozers\templates\Slide_3.jpg"width="700" height="400" align="middle"/></center>
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+<!doctype html>
+<html>
+<meta charset="utf-8"/>
+<head>
+<style>
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+</head>
+<title>button</title>
+<body>
+<style>
+#container {
+    margin: 0px auto;
+    width: 500px;
+    height: 375px;
+    border: 10px #333 solid;
+}
+#videoElement {
+    width: 500px;
+    height: 375px;
+    background-color: #666;
+}
+</style>
+</head>
+
+<body>
+<div id="container">
+    <video autoplay="true" id="videoElement">
+
+    </video>
+</div>
+<script>
+var video = document.querySelector("#videoElement");
+
+navigator.getUserMedia = navigator.getUserMedia || navigator.webkitGetUserMedia || navigator.mozGetUserMedia || navigator.msGetUserMedia || navigator.oGetUserMedia;
+
+if (navigator.getUserMedia) {
+    navigator.getUserMedia({video: true}, handleVideo, videoError);
+}
+
+function handleVideo(stream) {
+    video.src = window.URL.createObjectURL(stream);
+}
+
+function videoError(e) {
+    // do something
+}
+</script>
+<center><font><a href="http://127.0.0.1:5000/analysis" class="button"><font size="100">ANALYSE</a></font></center>
+</body>
+</head>
+</html>
+</body>
+</html>

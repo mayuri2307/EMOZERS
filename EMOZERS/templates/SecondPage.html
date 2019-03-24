@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<body style="background-color:#154360;color:#D7DBDD" background="{{bg2}}" background-size="1000px 1000px">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>EMOZERS</title>
+    <style>
+.button {
+    background-color: #D35400;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+</style>
+</head>
+<nav class="navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="file:///C:/Users/Siddharth/PycharmProjects/Emozers/templates/FirstPage.html">EMOZERS</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#band">ABOUT US
+        </a></li>
+        <li><a href="#contact">CONTACT</a></li>
+        <li class="dropdown">
+        </li>
+        <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</nav>
+<br>
+<br>
+<center><h1 style="color:#52BE80"><font size="100";family=>MOOD DETECTED</font></h1></center>
+<center><h1><font size="75">{{mood}}</h1></center></font>
+<center><h1 style="color:#52BE80"><font size="100">TRENDING MOOD</font></h1></center>
+<center><h1><font size="75">{{trending}}</h1></font></center>
+<center><audio controls autoplay><source src="{{song}}" type="audio/mp3" align="center"></audio>
+    <br>
+    <br>
+    <div style="background-color:##5DADE2;">
+<div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+     <center><img src="{{im1}}"width="700" height="400 background-color=black" align="middle"/></center>
+      <div class="carousel-caption">
+
+
+      </div>
+    </div>
+    <div class="item">
+     <center><img src="{{im2}}"width="700" height="400" align="middle"/></center>
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+
+    <div class="item">
+      <center><img src="{{im3}}"width="700" height="400" align="middle"/></center>
+      <div class="carousel-caption">
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</div>
+<p>
+    <br>
+    <br>
+    <br>
+<center><a href="http://127.0.0.1:5000/analysis" class="button"><font size="100">ANALYSE AGAIN</a></center></font>
+</center></p>
+<font><center><a href="https://docs.google.com/forms/d/e/1FAIpQLSfShahE2KMbeUCq0yf-JD3Q24BgS-fX1Ug0ASz9xTfGadxI3A/viewform" class="button"><font size="100">REVIEW</font></a></center>
+<center><h1><font size="75">{{message}}</h1></center></font>
+<h1 style="text-align:center"><a href=" https://www.psychologytoday.com/articles/200311/anger-pain-and-depression">CLICK ME</a></h1>
+</body>
+</html>
